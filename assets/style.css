@@ -74,6 +74,10 @@ div#calculadora {
         font-size: 95px;
     }
 
+    .row {
+        min-width: 328px;
+    }
+
     .row > div, .row > button {
         width: 80px;
         height: 80px;
