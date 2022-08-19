@@ -1,0 +1,62 @@
+div#caluculadora {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 53%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex: 0 0 100%;
+}
+
+.row > div, .row > button {
+    width: 150px;
+    height: 150px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.row:last-of-type > .numero {
+    flex: 0 0 302px;
+}
+
+.row .numero {
+    background-color: orange;
+}
+
+.row .numero:hover {
+    background-color: rgb(250, 179, 46);
+}
+
+.row .simbolo, .row button {
+    background-color: lightblue;
+}
+
+.row .simbolo:hover, .row button:hover {
+    background-color: rgb(197, 228, 238);
+}
+
+.row button {
+    flex: 0 0 152px;
+    height: 152px;
+}
+
+#screen {
+    height: 150px;
+    max-width: 608px;
+    flex: 0 0 100%;
+    border: 1px solid #000;
+    background-color: #cacaca;
+    align-items: end;
+    justify-content: end;
+    font-size: 130px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
