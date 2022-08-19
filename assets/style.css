@@ -9,6 +9,7 @@ div#caluculadora {
 .row {
     display: flex;
     flex: 0 0 100%;
+    min-width: 609px;
 }
 
 .row > div, .row > button {
