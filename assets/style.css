@@ -1,4 +1,4 @@
-div#caluculadora {
+div#calculadora {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -59,4 +59,35 @@ div#caluculadora {
     padding-right: 10px;
     box-sizing: border-box;
     text-overflow: ellipsis;
+}
+
+@media (max-width: 495px) {
+    div#calculadora {
+        width: inherit;
+    }
+
+    #screen {
+        height: 94px;
+        max-width: 608px;
+        flex: 0 0 95%;
+        font-size: 95px;
+    }
+
+    .row > div, .row > button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .row:last-of-type > .numero {
+        flex: 0 0 47%;
+    }
+
+    .row:last-of-type .simbolo {
+        flex: 0 0 23%;
+    }
+
+    .row button {
+        flex: 0 0 24%;
+        height: 82px;
+    }
 }
