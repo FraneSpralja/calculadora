@@ -69,30 +69,34 @@ div#calculadora {
 
     #screen {
         height: 94px;
-        max-width: 608px;
-        flex: 0 0 95%;
+        max-width: 100%;
+        flex: 0 0 100%;
         font-size: 95px;
     }
 
     .row {
         min-width: 328px;
-    }
+        max-width: 100%;
+        }
 
     .row > div, .row > button {
         width: 80px;
         height: 80px;
-    }
+        flex: 0 0 25%;
+        max-width: 24.5%
+        }
 
     .row:last-of-type > .numero {
         flex: 0 0 47%;
     }
 
     .row:last-of-type .simbolo {
-        flex: 0 0 23%;
+        flex: 0 0 25%;
     }
 
     .row button {
-        flex: 0 0 24%;
+        flex: 0 0 25%;
+        max-width: 25%;
         height: 82px;
     }
 }
